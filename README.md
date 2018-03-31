@@ -28,10 +28,10 @@ Who do the people you follow, follow? Pick your favorite twitter users and get a
 
    Things in all caps are values you should replace with tokens from the twitter app dashboard.
 
-3. Pick a list of people you like on twitter and put them in `favorites.csv`. For example:
+3. Pick a list of people you like on twitter and put them in `favorites.txt`. For example:
 
 ```
-$ cat favorites.csv
+$ cat favorites.txt
 alain
 devonzuegel
 backus
@@ -71,4 +71,4 @@ Top 20 recommendations:
       6 ATabarrok
 ```
 
-You may get rate limited by twitter if you put a lot of people in your `favorites.csv`! Just give it time
+You may get rate limited by twitter if you put a lot of people in your `favorites.txt`! Just give it time

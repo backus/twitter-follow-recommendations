@@ -6,7 +6,7 @@ if [ $# -ne 1 ]; then
 fi
 
 user="$1"
-outfile="data/followings/$user.csv"
+outfile="data/followings/$user.txt"
 
 # Pull followings for a user and sleep if we get rate limited
 followings() {

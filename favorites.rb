@@ -3,13 +3,13 @@ require 'pathname'
 username = ARGV.fetch(0) { fail 'Pass in your username!' }
 
 # Load up list of currated favorites
-favorites_list = Pathname.new('favorites.csv')
+favorites_list = Pathname.new('favorites.txt')
 
 # Create a glob for followings files for each of these people
-followings = Pathname.glob('./data/followings/*.csv')
+followings = Pathname.glob('./data/followings/*.txt')
 
 # Load up people we already follow
-me = Pathname.new("./data/followings/#{username}.csv")
+me = Pathname.new("./data/followings/#{username}.txt")
 
 others = followings - [me]
 

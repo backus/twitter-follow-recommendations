@@ -5,8 +5,8 @@ if [ $# -ne 2 ]; then
   exit 1
 fi
 
-if [ ! -f favorites.csv ]; then
-  echo "Create a list of your favorite people on twitter in favorites.csv. One username per line."
+if [ ! -f favorites.txt ]; then
+  echo "Create a list of your favorite people on twitter in favorites.txt. One username per line."
   exit 1
 fi
 
@@ -19,7 +19,7 @@ mkdir -p data/followings
 ./followings.sh "$me"
 
 # Download who everyone else follows
-cat favorites.csv \
+cat favorites.txt \
   | xargs -L1 -I% sh -c '>&2 echo "Loading @%" && ./followings.sh %'
 
 >&2 echo
