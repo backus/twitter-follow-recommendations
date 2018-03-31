@@ -4,9 +4,9 @@ Who do the people you follow, follow? Pick your favorite twitter users and get a
 
 ## Prereqs
 
-1. Install [_t_](https://github.com/sferik/t).
+1. Install [**t**](https://github.com/sferik/t).
 
-2. Authorize with _t_ via `t authorize`
+2. Authorize with **t** via `t authorize`
 
    If you run into an error while using this, just edit `~/.trc` manually. The format for mine (which works) looks like this:
 
